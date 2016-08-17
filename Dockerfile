@@ -8,6 +8,6 @@ RUN set -xe \
 VOLUME /home/aria2
 COPY lighttpd.conf /etc/
 
-EXPOSE 80
+EXPOSE 3000
 CMD set -xe \
     && lighttpd -D -f /etc/lighttpd.conf 
